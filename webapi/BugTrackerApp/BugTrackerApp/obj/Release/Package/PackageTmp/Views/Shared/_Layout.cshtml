@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Bug Tracker Application</title>
+    @*<link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+        <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />*@
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+    </environment>
+    <script src="~/Scripts/modernizr-2.8.3.js"></script>
+    @RenderSection("Scripts", required: false)
+</head>
+
+<style>
+
+        /*CSS Stuff, style as required */
+
+        /*
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    */
+
+        /* Style the header */
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        section {
+            background: #ccc;
+            padding: 20px;
+        }
+
+        /* Create two columns/boxes that floats next to each other */
+
+        nav {
+            float: left;
+            width: 15%;
+            /*//height: 300px;*/ /* only for demonstration, should be removed */
+            height: 90%;
+            background: #ccc;
+            padding: 20px;
+        }
+
+            /* Style the list inside the menu */
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 85%;
+            background-color: #f1f1f1;
+            /*//height: 300px;*/ /* only for demonstration, should be removed */
+            height: 90%;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+</style>
+
+
+<body>
+    @*<div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                    </ul>
+                </div>
+            </div>
+        </div>*@
+
+    <header>
+        <h1>Bug Tracker</h1>
+    </header>
+
+    
+    
+    <section>
+        @*
+        <nav>
+            <ul>
+                <li><a href="#">All bugs</a></li>
+                <li><a href="#">Open bugs</a></li>
+                <li><a href="#">Assigned to me</a></li>
+                <li><a href="#">Manage users</a></li>
+                <li><a href="#">Switch users</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <div class="container body-content">
+                @RenderBody()
+            </div> *@
+        @*<h2>Table goes here</h2>*@
+        @*</article>
+        *@
+
+        @RenderBody()
+    </section>
+
+
+
+    <footer>
+        <p>Adam Mir &copy; @DateTime.Now.Year - Bug Tracker Application</p>
+    </footer>
+
+
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+
+    @*@RenderSection("Scripts", required: false)*@
+</body>
+</html>

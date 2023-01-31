@@ -1,0 +1,94 @@
+.heading {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  //background-color: lightgrey;
+}
+
+.nav{
+	text-align: center;
+}
+
+
+/*Table*/
+.content-table{
+	border-collapse: collapse;
+	margin: 25px 0;
+	font-size: 0.9em;
+	min-width: 400px;
+	/*below aligns table;*/
+	//text-align:center;
+	margin-left: auto;
+	margin-right: auto;
+}
+.content-table thead tr{
+	background-color: darkgrey;
+	//color: #ffffff;
+	text-align: left;
+	font-weight: bold;
+	
+}
+.content-table th,
+.content-table td {
+	padding: 12px 15px;
+}
+
+.content-table tbody tr {
+	text-align: left;
+	border-bottom: 1px solid darkgrey;
+}
+
+.content-table tbody tr:nth-of-type(even){
+	background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+	border-bottom: 2px solid darkgrey;
+}
+
+/*Entry fields*/
+
+.submit-entry{
+	max-width: 500px;
+	margin: 2rem auto;
+	border: 2px solid darkgrey;
+	padding: 2rem;
+	text-align: left;
+}
+
+.submit-entry label{
+	margin: 2px;
+}
+
+.submit-entry label input{
+	width: 100%;
+}
+
+
+.submit-entry button{
+	margin: 1rem auto;
+	padding: 4px;
+	width: 40%;
+}
+
+.submit-entry select{
+	margin: 1rem auto;
+	padding: 4px;
+	width: 20%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="bugcheckerdbModelStoreContainer" CdmEntityContainer="bugcheckerdbEntities">
+    <EntitySetMapping Name="bugs">
+      <EntityTypeMapping TypeName="bugcheckerdbModel.bug">
+        <MappingFragment StoreEntitySet="bugs">
+          <ScalarProperty Name="bugid" ColumnName="bugid" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="createdon" ColumnName="createdon" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="assignedto" ColumnName="assignedto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="bugcheckerdbModel.user">
+        <MappingFragment StoreEntitySet="users">
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
